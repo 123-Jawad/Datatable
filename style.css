@@ -1,0 +1,80 @@
+body{
+ background-color: #B7BAC1;
+}
+.container{
+overflow-x: auto;
+position: absolute;
+top: 15%;
+
+}
+table{
+    /* border: 1px solid blue; */
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: auto;
+    font-family: "Nunito Sans", sans-serif;
+    overflow-x: scroll;
+    background-color: white;
+}
+tr:nth-child(even){
+    background-color: #eeeeee;
+}
+th{
+    height: 30px;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: blueviolet;
+    text-transform: capitalize;
+}
+.des{
+    max-width: 250px;
+}
+td{
+    height: 25px;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+    text-overflow: ellipsis;
+}
+#check{
+    width: 20px;
+    height: 50px;
+    color: blueviolet;
+}
+#button{
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    color: blueviolet;
+    text-transform: capitalize;
+}
+#button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+input[type=checkbox]{
+    accent-color: blueviolet    ;
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width:900px) {
+    table{
+        width: 100%;
+        overflow-x: auto;
+    }
+    .container{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {  
+    table{
+        overflow-x: auto;
+    }
+}
