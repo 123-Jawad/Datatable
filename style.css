@@ -13,35 +13,35 @@ body {
   margin: 0 auto;
   scrollbar-width: thin;
 }
-.selectoption{
-    position: sticky;
-    z-index: 1;
-    left: 0;
+.selectoption {
+  position: sticky;
+  z-index: 1;
+  left: 0;
 }
-.actions{
-    position: sticky;
-    z-index: 1;
-    right: 0;
+.actions {
+  position: sticky;
+  z-index: 1;
+  right: 0;
 }
-td.actions{
-    background-color: #e1d1eb;
+td.actions {
+  background-color: #e1d1eb;
 }
 
-tr:hover{
-    background-color: #b261e8;
-    color: white;
+tr:hover {
+  background-color: #b261e8;
+  color: white;
 }
 tr:hover td.selectoption,
-tr:hover td.actions{
-   background-color: #b261e8;
-   color: white;
-   z-index: 20;
+tr:hover td.actions {
+  background-color: #b261e8;
+  color: white;
+  z-index: 20;
 }
-td.selectoption{
-    background-color: #e1d1eb;
+td.selectoption {
+  background-color: #e1d1eb;
 }
-td.selectoption:hover{
-    background-color: #eeeeee;
+td.selectoption:hover {
+  background-color: #eeeeee;
 }
 table {
   border-collapse: collapse;
@@ -55,20 +55,19 @@ table {
   min-width: max-content;
 }
 
-.dropdown{
-    position: relative;
-    display: inline-block;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
-.dropdownbtn{
+.dropdownbtn {
   font-size: 16px;
   border: none;
   width: 35px;
   height: 30px;
   border-radius: 20px;
-
 }
-.content{
-   display: none;
+.content {
+  display: none;
   position: absolute;
   background-color: white;
   right: 0;
@@ -77,38 +76,39 @@ table {
   border-radius: 2px;
   text-align: left;
 }
-.content button{
-    padding: 8px;
-    margin: 2px;
-    min-width: max-content;
-    height: 50px;
-    color: blueviolet;
-    border: none;
-    border-bottom: 1px solid rgb(188, 184, 184);
-    cursor: pointer;
-    background-color: white;
+.content button {
+  padding: 8px;
+  min-width: max-content;
+  height: 50px;
+  color: blueviolet;
+  border: none;
+  border-bottom: 1px solid rgb(188, 184, 184);
+  cursor: pointer;
+  background-color: white;
 }
-.dropdown:hover .content{
-   display: block;
-   right: 0px;
-   top: 30px;
+.dropdown:hover .content {
+  display: block;
+  right: 0px;
+  top: 30px;
 }
-table tr:nth-last-child(-n + 3) .content{
-  right: 0;
-  bottom: 30px;
+tbody tr:nth-last-child(-n + 3) .content {
+  margin-right: 10px;
+  margin-top: -180px;
 }
-
-span{
-    padding-right: 80px;
-    font-size: 15px;
+.content button:hover {
+  background-color: blueviolet;
+  color: white;
+}
+span {
+  padding-right: 85px;
+  font-size: 15px;
 }
 th {
   padding: 12px;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
-  /* min-width: max-content; */
   background-color: blueviolet;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .tooltip {
   max-width: 250px;
@@ -141,20 +141,4 @@ td {
 }
 input[type="checkbox"] {
   accent-color: blueviolet;
-}
-
-@media only screen and (min-width: 600px) and (max-width: 900px) {
-  table {
-    width: 100%;
-    overflow-x: auto;
-  }
-  .container {
-    width: auto;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  table {
-    overflow-x: auto;
-  }
 }
